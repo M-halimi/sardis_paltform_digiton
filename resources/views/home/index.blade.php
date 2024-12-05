@@ -26,7 +26,7 @@
         </div>
     </header>
     {{--  end header  --}}
-    <section class="max-w-7xl mx-auto py-4 md:py-8">
+    <section class="max-w-7xl mx-auto py-4 md:py-8 mt-4">
         <div class="flex flex-col justify-center items-center space-y-2 md:space-y-4">
             <h2 class="font-bold lg:text-4xl max-w-5xl md:px-14 md:text-2xl px-4 text-center text-cobalt-950 text-lg tracking-wider">
                 Robinetterie et Produits Sanitaires Haut de Gamme au Maroc
@@ -331,18 +331,18 @@
             />
 
             <!-- Right Section -->
-            <div class="grid space-y-4 gap-4     col-span-2">
+            <div class="grid space-y-4 gap-4 col-span-2">
                 <!-- Upper Section -->
                 <div class="grid grid-cols-2 gap-8">
                     <!-- Blog Article Card -->
                     <div class="relative w-full">
                         <img src="{{asset('assets/image-page-accuiel/espace-informations.png')}}"
-                             class="animate-pulse object-cover max-h-40 relative rounded-t-lg w-full"
+                             class="animate-pulse object-cover max-h-40 relative rounded-t-3xl w-full"
                              alt="espace-informations"
                              width="100"
                              height="100"
                              loading="lazy">
-                        <p class="-translate-y-2 absolute bg-persian-plum-900 inset-x-0 py-3 rounded-b-lg text-2xl text-center text-white">
+                        <p class="-translate-y-2 absolute bg-persian-plum-900 inset-x-0 py-3 rounded-b-3xl text-2xl text-center text-white">
                             Article Blog 1
                         </p>
                     </div>
@@ -361,7 +361,7 @@
                 </div>
 
                 <!-- Lower Section: Placeholder for Video or Image -->
-                <div class="w-full  relative">
+                <div class="w-full relative ">
                     <img
                         src="{{ asset('assets/image-page-accuiel/photoforendsection.png') }}"
                         alt="photoforendsection"
