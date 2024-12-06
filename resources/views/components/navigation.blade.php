@@ -1,5 +1,5 @@
 <div class="mx-auto max-w-7xl">
-    <div x-data="{ showNavbar: true, lastScrollY: window.scrollY }"
+    <div x-data="{ showNavbar: true,  lastScrollY: window.scrollY }"
          @scroll.window="
             showNavbar = window.scrollY <= lastScrollY || window.scrollY < 50;
             lastScrollY = window.scrollY;
@@ -41,7 +41,7 @@
                     </li>
                     <li>
                         <x-nav-link href="" target="_blank"
-                                    :active="request()->routeIs('https://simulateur.tecas-solar.com')">
+                                    :active="request()->routeIs('#')">
                             Simulateur
                         </x-nav-link>
                     </li>
@@ -64,7 +64,7 @@
             <div class="flex items-center gap-6 xl:hidden">
 {{--                <livewire:shopping-cart/>--}}
 
-                <button x-on:click="showNavbar = !showNavbar" aria-label="navMenu" :aria-expanded="showNavbar"
+                <button x-on:click="openMenu = !openMenu" aria-label="navMenu" :aria-expanded="openMenu"
                         aria-controls="mobNav">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
                          fill="none" stroke="#24429a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -84,9 +84,9 @@
 
 {{-- Mobile navMenu --}}
 <nav id="mobNav" class="fixed top-0 bottom-0 left-0 right-0 z-[9999] p-2 backdrop-blur-sm md:p-6 xl:hidden"
-     :class="showNavbar ? 'visible' : 'invisible'" x-cloak>
+     :class="openMenu ? 'visible' : 'invisible'" x-cloak>
     <ul class="absolute top-0 bottom-0 right-0 w-10/12 py-8 text-lg transition-all bg-white drop-shadow-2xl "
-        :class="showNavbar ? 'translate-x-0' : 'translate-x-full'">
+        :class="openMenu ? 'translate-x-0' : 'translate-x-full'">
         <li class="py-10 px-4">
             <div class="flex justify-center ">
                 <a href="/">
