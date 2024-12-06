@@ -13,7 +13,7 @@
         'font-medium',
         'text-black',
         'tracking-wide',
-        "px-7 py-3 md:px-14 md:py-4", // default padding
+        "px-7 py-3 md:px-14 md:py-3", // default padding
     ];
 
     // Handle size variations
