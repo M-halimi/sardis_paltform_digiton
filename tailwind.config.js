@@ -14,6 +14,10 @@ export default {
     ],
     theme: {
         extend: {
+            lineClamp: {
+                1: '1',
+                none: 'none',
+            },
             colors: {
                     cobalt: {
                     50: "#f0f6fe",

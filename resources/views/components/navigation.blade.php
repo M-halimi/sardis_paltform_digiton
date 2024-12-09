@@ -17,6 +17,8 @@
                 </a>
             </div>
 
+
+
             <div class="hidden xl:flex">
                 <ul class="flex items-center gap-10 ">
                     <li>
@@ -25,7 +27,7 @@
                         </x-nav-link>
                     </li>
                     <li>
-                        <x-nav-link href=""  :active="request()->is('notre-boutique*')">
+                    <x-nav-link href="{{route('boutique.index')}}"  :active="request()->is('notre-boutique*')">
                             Notre boutique
                         </x-nav-link>
                     </li>

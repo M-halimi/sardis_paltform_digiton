@@ -31,7 +31,7 @@
             <h2 class="font-bold lg:text-4xl max-w-5xl md:px-14 md:text-2xl px-4 text-center text-cobalt-950 text-lg tracking-wide">
                 Robinetterie et produits sanitaires haut de gamme au Maroc
             </h2>
-            <p class="text-lg md:text-3xl tracking-tight text-tango-500 font-semibold">
+            <p class="text-lg md:text-2xl tracking-tight text-tango-500 font-semibold">
                 Explorez notre collection de Produits
             </p>
         </div>
@@ -199,7 +199,7 @@
             <h2 class="font-bold lg:text-4xl max-w-5xl md:px-14 md:text-2xl px-4 text-center text-cobalt-950 text-lg tracking-wide">
                 Marques et produits disponibles
             </h2>
-            <p class="text-lg md:text-3xl tracking-wide max-w-2xl text-center text-tango-500 font-semibold">
+            <p class="text-lg md:text-2xl tracking-wide max-w-2xl text-center text-tango-500 font-semibold">
                 Explorez nos marques de robinetterie et produits sanitaires
             </p>
         </div>

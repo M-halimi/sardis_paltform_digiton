@@ -8,3 +8,4 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 Route::view('/','home.index')->name('home.index');
+Route::view('/boutique','boutique.index')->name('boutique.index');
