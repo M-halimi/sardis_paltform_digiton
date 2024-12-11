@@ -1,5 +1,6 @@
     <footer class="max-w-7xl mx-auto py-4">
-        <div class="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 px-6">
+        <div class="grid  grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-8 px-6">
+
             <!-- Logo Section -->
             <div class="flex justify-center items-center col-span-1 sm:col-span-2 lg:col-span-1">
                 <a href="/" aria-label="Homepage">
@@ -109,7 +110,7 @@
                             </svg>
                         </div>
                     </li>
-                    <li class="relative group">
+                    {{-- <li class="relative group">
                         <div
                             class="w-12 h-12 bg-white text-lg text-gray-900 flex justify-center items-center rounded-full shadow-lg transition-transform transform group-hover:scale-110 cursor-pointer">
             <span
@@ -121,7 +122,7 @@
                                     d="M20.79 18L34.71 2.1c.45-.6.54-1.44.21-2.1-.33-.72-1.02-1.14-1.77-1.14H26.13c-.81 0-1.57.33-2.1.9L17.94 9.33 12.12.9c-.54-.6-1.29-.9-2.1-.9H2.85C2.1 0 1.41.42 1.08 1.14c-.33.66-.24 1.5.21 2.1L15.21 18 1.29 33.9c-.45.6-.54 1.44-.21 2.1.33.72 1.02 1.14 1.77 1.14h7.17c.81 0 1.57-.33 2.1-.9l5.82-8.43 5.82 8.43c.54.6 1.29.9 2.1.9h7.17c.75 0 1.44-.42 1.77-1.14.33-.66.24-1.5-.21-2.1L20.79 18z"></path>
                             </svg>
                         </div>
-                    </li>
+                    </li> --}}
                     <li class="relative group">
                         <div
                             class="w-12 h-12 bg-white text-lg text-gray-900 flex justify-center items-center rounded-full shadow-lg transition-transform transform group-hover:scale-110 cursor-pointer">

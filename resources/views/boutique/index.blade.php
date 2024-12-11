@@ -40,18 +40,18 @@
                     <template x-for="(brand, index) in brands" :key="index">
                         <div class="shrink-0" :style="`width: ${100 / visibleItems}%`">
                             <div class="p-4">
-                                <button @click="toggleBrand(brand.name)"
-                                    class="block bg-white shadow-md px-8 mx-auto rounded-3xl overflow-hidden w-64 h-64 aspect-square transition-all duration-300 hover:ring-4 hover:ring-blue-500"
+                                <div @click="toggleBrand(brand.name)"
+                                    class="flex justify-center items-center bg-white shadow-md px-8 mx-auto rounded-3xl overflow-hidden w-64 h-64 aspect-square transition-all duration-300 hover:ring-4 hover:ring-blue-500"
                                     :class="{ 'ring-4 ring-persian-plum-500': isBrandSelected(brand.name) }">
                                     <div class="h-20 md:h-44 flex items-center justify-center">
                                         <img :src="brand.image" :alt="brand.name" width="100" height="100"
                                             class="max-w-full lg:max-h-full object-cover" />
                                     </div>
-                                </button>
+                                </div>
                                 <div class="mt-2 text-center font-medium text-lg text-black z-40">
                                     <span x-text="brand.name"></span>
                                 </div>
-                                <div x-data="{ expanded: false }" class="h-full flex flex-col mt-4">
+                                {{-- <div x-data="{ expanded: false }" class="h-full flex flex-col mt-4">
                                     <p class="text-lg text-black tracking-wide px-0.5 flex-grow">
                                         <span x-show="!expanded" x-text="'Short description of ' + brand.name"></span>
                                         <span x-show="expanded" x-text="'Full description of ' + brand.name"></span>
@@ -71,7 +71,7 @@
                                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                                         </svg>
                                     </button>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </template>
@@ -96,9 +96,9 @@
         </div>
     </section>
     {{-- section for read more   --}}
-    {{-- <section class="max-w-7xl flex space-x-8 justify-center items-center mx-auto px-6">
+    <section class="max-w-7xl flex space-x-8 justify-center items-center mx-auto px-6">
         <div class="container mx-auto ">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
                 <x-read-more shortDescription="Fondée en 1890 est une marque espagnole"
                     fullDescription="renommée pour sa robinetterie et ses accessoires de salle de bain alliant innovation, sécurité et design élégant. Présente dans plus de 60 pays, elle est reconnue pour ses systèmes avancés comme Thermostat et Hotblock, garantissant confort et protection." />
                 <x-read-more shortDescription="Une marque turque reconnue pour ses équipements"
@@ -110,7 +110,7 @@
                     fullDescription="et sophistiqués, tels que des mélangeurs et des accessoires haut de gamme. Elle allie esthétique, durabilité et innovation pour offrir des solutions adaptées aux salles de bain de prestige." />
             </div>
         </div>
-    </section> --}}
+    </section>
     {{-- end section Découvrez Nos Marques de Référence ! --}}
 
     <section class="max-w-7xl mx-auto py-4 md:py-8 px-4">
@@ -123,30 +123,30 @@
                 Robinetterie, Accessoires et Solutions pour une salle de bain moderne et fonctionnelle
             </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 px-2 md:px-0 py-4 md:py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 px-2 md:px-0 py-4 md:py-12 place-content-center">
             <!-- Card 1 -->
-            <div class="relative translate-y-0 sm:translate-y-4 md:translate-y-6 w-10/12 h-64 ">
+            <div class="relative translate-y-0 sm:translate-y-4 md:translate-y-6 md:w-10/12 md:h-64 ">
                 <img src="{{ asset('assets/image-page-boutique/robinetterie.png') }}"
-                    class="w-80 h-full object-cover aspect-square rounded-3xl" width="80" height="80"
+                    class="w-full md:w-80 h-full object-cover aspect-square rounded-3xl" width="80" height="80"
                     alt="robinetterie" loading="lazy" />
             </div>
             <!-- Card 2 -->
-            <div class="relative translate-y-0 sm:-translate-y-2 md:-translate-y-4 w-10/12 h-64">
+            <div class="relative translate-y-0 sm:-translate-y-2 md:-translate-y-4 md:w-10/12 md:h-64">
                 <img src="{{ asset('assets/image-page-boutique/siphons-et-caniveaux.png') }}"
                     class="w-full md:w-80 rounded-3xl h-full  object-cover aspect-square" width="80" height="80"
                     loading="lazy" alt="siphons-et-caniveaux" />
             </div>
             <!-- Card 3 -->
             <div
-                class="relative translate-y-0 sm:translate-y-4 md:translate-y-6 w-10/12 h-64 bg-french-pass-50 border shadow-md rounded-2xl overflow-hidden">
+                class="relative translate-y-0 sm:translate-y-4 md:translate-y-6  md:w-10/12 md:h-64 bg-french-pass-50 border shadow-md rounded-2xl overflow-hidden">
                 <img src="{{ asset('assets/image-page-boutique/clapets-et-regards.png') }}"
                     class="w-full md:w-80 h-full object-cover aspect-square rounded-3xl" width="80" height="80"
                     loading="lazy" alt="clapets-et-regards" />
             </div>
             <!-- Card 4 -->
-            <div class="relative translate-y-0 sm:-translate-y-2 md:-translate-y-4 w-10/12 h-64">
+            <div class="relative translate-y-0 sm:-translate-y-2 md:-translate-y-4 md:w-10/12 md:h-64">
                 <img src="{{ asset('assets/image-page-boutique/accessoires-salle-de-bain.png') }}" loading="lazy"
-                    class="w-full md:w-80 h-full object-cover bg-cover aspect-square" width="80" height="80"
+                    class="w-full md:w-80 h-full object-cover bg-cover aspect-square rounded-3xl" width="80" height="80"
                     alt="accessoires-salle-de-bain" />
             </div>
         </div>
@@ -170,50 +170,50 @@
             {{-- grid 1 --}}
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mt-8">
                 <!-- Product Card -->
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
                 <!-- Duplicate for other cards -->
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
 
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
 
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56  object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
@@ -221,51 +221,51 @@
             {{-- grid 1 --}}
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mt-8">
                 <!-- Product Card -->
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
                     <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
                 <!-- Duplicate for other cards -->
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5 ">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5 ">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
 
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
 
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
+                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
                         {{--                        <button class="mt-4 bg-persian-plum-900 text-white py-4 px-4 rounded-lg w-56">More Detail</button> --}}
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
@@ -274,51 +274,51 @@
             {{-- grid 3 --}}
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mt-8">
                 <!-- Product Card -->
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
                 <!-- Duplicate for other cards -->
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border  rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5 ">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                    <div class="p-y-4text-center flex flex-col justify-center items-center space-y-1.5 ">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
 
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
 
-                <div class="border h-80 rounded-3xl shadow-md overflow-hidden">
+                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
                     <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
                         alt="Product Image"
                         class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
                         width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h5 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h5>
+                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
+                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
                         {{--                        <button class="mt-4 bg-persian-plum-900 text-white py-4 px-4 rounded-lg w-56">More Detail</button> --}}
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white w-60 text-center'" :size="'lg '" :variant="'bg'"
+                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
                             :weight="'solid'" />
                     </div>
                 </div>
@@ -327,7 +327,14 @@
             {{-- {{ $produits->links() }} --}}
         </div>
     </section>
-    {{-- end scrtion Découvrez notre sélection de produits sanitaires --}}
+    {{-- <section class="p-5 py-10 w-80 h-80 bg-biscay-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer">
+        <img src="https://www.dropbox.com/s/mlor33hzk73rh0c/x14423.png?dl=1" alt="">
+        <h1 class="text-3xl my-5">Soft Plushy Cushion Chair</h1>
+        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, incidunt!</p>
+        <h2 class="font-semibold mb-5">$29.99</h2>
+        <button class="p-2 px-6 bg-purple-500 text-white rounded-md hover:bg-purple-600">Add To Cart</button>
+    </section>
+    end scrtion Découvrez notre sélection de produits sanitaires --}}
     <section class="max-w-7xl mx-auto py-4 px-4">
         <div class="bg-white">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -346,13 +353,13 @@
                             class="w-full  rounded-2xl object-cover transform hover:scale-105 transition-transform duration-300"
                             alt="refresh-icon-reload-perforated-paper" width="100" height="100">
                         <div class="group relative flex flex-col justify-center items-center">
-                            <h3
+                            <h4
                                 class="py-2.5 font-semibold w-48 text-cobalt-600 text-center text-xl mt-3 underline-offset-2 underline decoration-cobalt-800">
                                 <a href="/#">
                                     <span class="absolute inset-0"></span>
                                     Zero rupture stock
                                 </a>
-                            </h3>
+                            </h4>
                             <p class="text-lg mt-4 text-black tracking-wide px-0.5">On assure le maintien de la
                                 disponibilité de nos articles, pour que vous puissiez les commander sans rupture de
                                 stock.</p>
@@ -367,13 +374,13 @@
                             alt="refresh-icon-reload-perforated-paper" alt="délais-de-livraison" width="100"
                             height="100">
                         <div class="group relative flex flex-col justify-center items-center">
-                            <h3
+                            <h4
                                 class="py-2.5 font-semibold w-48 text-cobalt-600 text-center text-xl mt-3 underline-offset-2 underline decoration-cobalt-800">
                                 <a href="/#">
                                     <span class="absolute inset-0"></span>
                                     Délais de livraison
                                 </a>
-                            </h3>
+                            </h4>
                             <p class="text-lg mt-4 text-black tracking-wide px-0.5">Nous nous engageons à respecter les
                                 délais de livraison pour que vous receviez vos articles dans les délais prévus.</p>
                         </div>
@@ -387,13 +394,13 @@
                             class="w-full rounded-2xl object-cover transform hover:scale-105 transition-transform duration-300"
                             alt="refresh-icon-reload-perforated-paper" width="100" height="100">
                         <div class="group relative flex flex-col justify-center items-center">
-                            <h3
+                            <h4
                                 class="py-2.5 font-semibold w-48 text-cobalt-600 text-center text-xl mt-3 underline-offset-2 underline decoration-cobalt-800">
                                 <a href="/#">
                                     <span class="absolute inset-0"></span>
                                     Garantie produit
                                 </a>
-                            </h3>
+                            </h4>
                             <p class="text-lg mt-4 text-black tracking-wide px-0.5">Si vous n’êtes pas satisfait de
                                 votre achat, nous vous offrons une garantie satisfait ou remboursé.</p>
                         </div>
@@ -406,14 +413,14 @@
     </section>
     {{-- end section --}}
     <section class="max-w-7xl mx-auto px- py-4">
-        <div class="flex flex-col justify-center items-center space-y-4">
+        <div class="space-y-4">
             <h2
                 class="font-bold lg:text-4xl max-w-5xl md:px-14 md:text-2xl px-4 text-center text-cobalt-950 text-lg tracking-wide">
                 {{ __('Foire aux questions') }}
             </h2>
 
-            <div class="flex justify-center items-center space-y-4">
-
+            <div class="flex justify-center mt-8 px-4 md:px-2">
+            <div class="space-y-4">
                 <div class="group">
                     <div class="flex items-start gap-3 hover:text-primary transition-colors">
                         <span class="inline-block text-tango-500 mt-1">
@@ -553,6 +560,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
     </section>
     {{-- end section --}}
@@ -596,7 +604,8 @@
                     visibleItems: window.innerWidth >= 1024 ? 4 : (window.innerWidth >= 768 ? 3 : 2),
                     brands: [{
                             name: 'Ramonsoler',
-                            image: '{{ asset('assets/image-page-accuiel/logo-silder1.png') }}'
+                            image: '{{ asset('assets/image-page-accuiel/logo-silder1.png') }}',
+
                         },
                         {
                             name: 'MESATEKNIK',

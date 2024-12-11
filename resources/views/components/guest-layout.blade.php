@@ -15,6 +15,7 @@
     <link rel="canonical" href="{{ url()->current() }}" />
     {{--  script alpinjs   --}}
     <script src="//unpkg.com/alpinejs" defer></script>
+    
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="{{ \Illuminate\Support\Facades\Storage::url(settings()->get('general.site_favicon')) ?? asset('assets/logos/favicon.ico') }}">
