@@ -1,5 +1,5 @@
 <div class="mx-auto max-w-7xl">
-    <div x-data="{ showNavbar: true, OpenMune: false, lastScrollY: window.scrollY }">
+    <div x-data="{ showNavbar: true, lastScrollY: window.scrollY }">
 
         <div @scroll.window="
             showNavbar = window.scrollY <= lastScrollY || window.scrollY < 50;
@@ -18,27 +18,25 @@
                 </a>
             </div>
 
-
-
             <div class="hidden xl:flex">
                 <ul class="flex items-center gap-10 ">
                     <li>
-                        <x-nav-link href="" :active="request()->is('services*')">
+                        <x-nav-link href="" :active="request()->is('#')">
                             Nos services
                         </x-nav-link>
                     </li>
                     <li>
-                    <x-nav-link href="{{route('boutique.index')}}"  :active="request()->is('notre-boutique*')">
+                    <x-nav-link href="{{ route('boutique.index') }}"  :active="request()->is('boutique*')">
                             Notre boutique
                         </x-nav-link>
                     </li>
                     <li>
-                        <x-nav-link href="}" :active="request()->is('portfolio*')">
+                        <x-nav-link href="" :active="request()->is('#')">
                             Portfolio
                         </x-nav-link>
                     </li>
                     <li>
-                        <x-nav-link href="" :active="request()->is('a-propos*')">
+                        <x-nav-link href="" :active="request()->is('#')">
                             à propos
                         </x-nav-link>
                     </li>
@@ -50,14 +48,11 @@
                     </li>
 {{--                   --}}
                     <li>
-                        {{--                        <button x-on:click="$dispatch('open-contact-form-modal')"--}}
-                        {{--                            class="block cursor-pointer rounded-lg font-medium text-white bg-cobalt-800 px-3 py-1 md:px-6 md:py-1.5">--}}
-                        {{--                            Consultation--}}
-                        {{--                        </button>--}}
-                        <a href=""
-                           class="block cursor-pointer rounded-lg font-medium text-white bg-cobalt-800 px-3 py-1 md:px-6 md:py-1.5">
-                            Consultation
-                        </a>
+                        <x-nav-link >
+                            <x-button-pages :text="'Consultation'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md'" :variant="'bg'"
+                            :weight="'solid'" />
+                        </x-nav-link>
+
                         {{--                        <template x-teleport="body">--}}
                         {{--                            <x-cta-contact />--}}
                         {{--                        </template>--}}
@@ -89,7 +84,7 @@
 <nav id="mobNav" class="fixed top-0 bottom-0 left-0 right-0 z-[9999] p-2 backdrop-blur-sm md:p-6 xl:hidden"
 :class="OpenMune ? 'visible' : 'invisible'" x-cloak>
     <ul class="absolute top-0 bottom-0 right-0 w-10/12 py-8 text-lg transition-all bg-white drop-shadow-2xl "
-    :class="OpenMune ? 'translate-x-0' : 'translate-x-full invisible'">
+        :class="OpenMune ? 'translate-x-0' : 'translate-x-full'">
         <li class="py-10 px-4">
             <div class="flex justify-center ">
                 <a href="/">
@@ -116,9 +111,8 @@
             <a class="block p-4 text-center" href="" target="_blank">Simulateur</a>
         </li>
 
-        <div class="flex justify-center items-center pt-2">
-            <x-button-pages :title="'Consultation'" :route="'#'" :class="'w-72 text-center py-2.5'"/>
-        </div>
+        <x-button-pages :text="'Consultation'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md'" :variant="'bg'"
+                            :weight="'solid'" />
 
     </ul>
     {{-- close navMenu --}}

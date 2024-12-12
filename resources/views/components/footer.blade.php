@@ -1,6 +1,6 @@
     <footer class="max-w-7xl mx-auto py-4">
         <div class="grid  grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-8 px-6">
-
+            
             <!-- Logo Section -->
             <div class="flex justify-center items-center col-span-1 sm:col-span-2 lg:col-span-1">
                 <a href="/" aria-label="Homepage">
@@ -11,7 +11,7 @@
 
             <!-- Why Sardis Section -->
             <div class="">
-                <h2 class="text-2xl font-bold text-cobalt-950 mb-4">Pourquoi Sardis ?</h2>
+                <h2 class="text-2xl font-bold text-cobalt-950 mb-   4">Pourquoi Sardis ?</h2>
                 <p class="text-lg text-gray-800 leading-relaxed">
                     En choisissant Sardis, vous bénéficierez d'un support de qualité et de notre expertise pour vous
                     accompagner tout au long de votre projet sanitaire.

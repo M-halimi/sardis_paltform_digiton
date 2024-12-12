@@ -13,9 +13,7 @@
 
     <meta name="description" content="{{ $site_description ?? settings()->get('general.site_description') ?? '' }}">
     <link rel="canonical" href="{{ url()->current() }}" />
-    {{--  script alpinjs   --}}
     <script src="//unpkg.com/alpinejs" defer></script>
-    
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="{{ \Illuminate\Support\Facades\Storage::url(settings()->get('general.site_favicon')) ?? asset('assets/logos/favicon.ico') }}">
@@ -62,14 +60,14 @@
         {
             "@context": "http://schema.org",
             "@type": "WebSite",
-            "name": "{{ config('app.name', 'Laravel') }}",
+            "name": "{{ config('app.name', 'Platform-sardis') }}",
             "url": "{{ config('app.url') }}"
         }
     </script>
 
     @stack('head::end')
 </head>
-<body class="antialiased" dir="{{(app()->isLocale('ar') ? 'rtl' : 'ltr')}}">
+<body class="antialiased" x-data="{ OpenMune: false }" dir="{{ app()->isLocale('ar') ? 'rtl' : 'ltr' }}">
     @stack('body::start')
     <x-navigation />
 
@@ -84,6 +82,7 @@
     @vite('resources/js/app.js')
     @stack("body::scripts")
 
+    @livewireScripts
     @stack('body::end')
 </body>
 </html>

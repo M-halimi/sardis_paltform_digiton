@@ -4,7 +4,7 @@
 
     <header>
         <div class="max-h-screen py-24 flex flex-col items-center justify-center bg-cover backdrop-blur-sm object-cover aspect-square bg-center w-full md:py-0"
-            style=" background-image: url('{{ asset('assets/image-page-boutique/cover-image-for-page-boutique.png') }}'), linear-gradient(rgba(45,55,72,2), rgba(45,55,72,2));background-size: cover; background-position: center; background-blend-mode: overlay;">
+            style=" background-image: url('{{ asset('assets/image-page-boutique/arquitectura_y_empresa_ramon_soler_slow_life_bano.png') }}'), linear-gradient(rgba(45,55,72,2), rgba(45,55,72,2));background-size: cover; background-position: center; background-blend-mode: overlay;">
             <div class="max-w-7xl mx-auto space-y-4 md:space-y-6">
                 <h1
                     class="text-3xl md:text-4xl lg:text-6xl text-white tracking-wide max-w-6xl text-carrot-orange-400 text-center font-bold px-4 py-2 lg:px-2">
@@ -166,168 +166,72 @@
                 Robinetterie, Sèche-mains et Accessoires pour sublimer votre salle de bain
             </p>
         </div>
-        <div class="grid grid-rows-3 gap-4">
-            {{-- grid 1 --}}
+        <div class="grid grid-rows-2 gap-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mt-8">
-                <!-- Product Card -->
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
-                <!-- Duplicate for other cards -->
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
+                <x-card-produit
+                    imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
+                    brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                    productName="Classic Running Shoe"
+                    :rating="4"
+                />
 
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
+                <x-card-produit
+                imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
+                brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                productName="Classic Running Shoe"
+                :rating="4"
+                    />
 
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56  object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
-            </div>
-            {{-- grid 1 --}}
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mt-8">
-                <!-- Product Card -->
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="p-1 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
-                <!-- Duplicate for other cards -->
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5 ">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
+                    <x-card-produit
+                    imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
+                    brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                    productName="Classic Running Shoe Classic Running ShoeClassic Running Shoe  "
+                    :rating="4"
+                />
 
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
+                <x-card-produit
+                imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
+                brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                productName="Classic Running Shoe"
+                :rating="4"
+            />
 
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        {{--                        <button class="mt-4 bg-persian-plum-900 text-white py-4 px-4 rounded-lg w-56">More Detail</button> --}}
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
             </div>
 
-            {{-- grid 3 --}}
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mt-8">
-                <!-- Product Card -->
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
-                <!-- Duplicate for other cards -->
-                <div class="border  rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="p-y-4text-center flex flex-col justify-center items-center space-y-1.5 ">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
+                <x-card-produit
+                imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
+                brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                productName="Classic Running Shoe"
+                :rating="4"
+            />
 
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
+            <x-card-produit
+            imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
+            brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+            productName="Classic Running Shoe"
+            :rating="4"
+                />
 
-                <div class="border rounded-3xl duration-500 hover:scale-105 hover:shadow-xl  transform overflow-hidden">
-                    <img src="{{ asset('assets/image-page-accuiel/robinetterie-élégante-et-durable.png') }}"
-                        alt="Product Image"
-                        class="w-full max-h-56 object-cover bg-center aspect-square rounded-t-3xl object-top"
-                        width="100" height="100">
-                    <div class="py-4 text-center flex flex-col justify-center items-center space-y-1.5">
-                        <h3 class="font-semibold text-lg md:text-xl text-cobalt-950">Titre produit</h3>
-                        {{--                        <button class="mt-4 bg-persian-plum-900 text-white py-4 px-4 rounded-lg w-56">More Detail</button> --}}
-                        <x-button-pages :text="'More Detail'" :class="'bg-persian-plum-900 text-white text-center'" :size="'md '" :variant="'bg'"
-                            :weight="'solid'" />
-                    </div>
-                </div>
+                <x-card-produit
+                imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
+                brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                productName="Classic Running Shoe Classic Running ShoeClassic Running Shoe  "
+                :rating="4"
+            />
+
+            <x-card-produit
+            imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
+            brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+            productName="Classic Running Shoe"
+            :rating="4"
+        />
             </div>
-            {{-- pagination --}}
-            {{-- {{ $produits->links() }} --}}
         </div>
+
     </section>
-    {{-- <section class="p-5 py-10 w-80 h-80 bg-biscay-50 text-center transform duration-500 hover:-translate-y-2 cursor-pointer">
+
+    {{-- <section class="p-5 py-10 w-80 h-80  text-center transform duration-500 hover:-translate-y-2 cursor-pointer">
         <img src="https://www.dropbox.com/s/mlor33hzk73rh0c/x14423.png?dl=1" alt="">
         <h1 class="text-3xl my-5">Soft Plushy Cushion Chair</h1>
         <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, incidunt!</p>
@@ -353,13 +257,13 @@
                             class="w-full  rounded-2xl object-cover transform hover:scale-105 transition-transform duration-300"
                             alt="refresh-icon-reload-perforated-paper" width="100" height="100">
                         <div class="group relative flex flex-col justify-center items-center">
-                            <h4
+                            <h3
                                 class="py-2.5 font-semibold w-48 text-cobalt-600 text-center text-xl mt-3 underline-offset-2 underline decoration-cobalt-800">
                                 <a href="/#">
                                     <span class="absolute inset-0"></span>
                                     Zero rupture stock
                                 </a>
-                            </h4>
+                            </h3>
                             <p class="text-lg mt-4 text-black tracking-wide px-0.5">On assure le maintien de la
                                 disponibilité de nos articles, pour que vous puissiez les commander sans rupture de
                                 stock.</p>
@@ -374,13 +278,13 @@
                             alt="refresh-icon-reload-perforated-paper" alt="délais-de-livraison" width="100"
                             height="100">
                         <div class="group relative flex flex-col justify-center items-center">
-                            <h4
+                            <h3
                                 class="py-2.5 font-semibold w-48 text-cobalt-600 text-center text-xl mt-3 underline-offset-2 underline decoration-cobalt-800">
                                 <a href="/#">
                                     <span class="absolute inset-0"></span>
                                     Délais de livraison
                                 </a>
-                            </h4>
+                            </h3>
                             <p class="text-lg mt-4 text-black tracking-wide px-0.5">Nous nous engageons à respecter les
                                 délais de livraison pour que vous receviez vos articles dans les délais prévus.</p>
                         </div>
@@ -394,13 +298,13 @@
                             class="w-full rounded-2xl object-cover transform hover:scale-105 transition-transform duration-300"
                             alt="refresh-icon-reload-perforated-paper" width="100" height="100">
                         <div class="group relative flex flex-col justify-center items-center">
-                            <h4
+                            <h3
                                 class="py-2.5 font-semibold w-48 text-cobalt-600 text-center text-xl mt-3 underline-offset-2 underline decoration-cobalt-800">
                                 <a href="/#">
                                     <span class="absolute inset-0"></span>
                                     Garantie produit
                                 </a>
-                            </h4>
+                            </h3>
                             <p class="text-lg mt-4 text-black tracking-wide px-0.5">Si vous n’êtes pas satisfait de
                                 votre achat, nous vous offrons une garantie satisfait ou remboursé.</p>
                         </div>
@@ -442,9 +346,9 @@
                             </svg>
 
                         </span>
-                        <h3 class="text-lg font-medium leading-6 group-hover:text-primary transition-colors">
+                        <h4 class="text-lg font-medium leading-6 group-hover:text-primary transition-colors">
                             Quels matériaux utilisez-vous pour vos produits sanitaires ?
-                        </h3>
+                        </h4>
                     </div>
                 </div>
 
@@ -470,9 +374,9 @@
 
                         </span>
 
-                        <h3 class="text-lg font-medium leading-6 group-hover:text-primary transition-colors">
+                        <h4 class="text-lg font-medium leading-6 group-hover:text-primary transition-colors">
                             Vos produits sont-ils compatibles avec les normes européennes/marocaines ?
-                        </h3>
+                        </h4>
                     </div>
                 </div>
 
@@ -498,9 +402,9 @@
 
                         </span>
 
-                        <h3 class="text-lg font-medium leading-6 group-hover:text-primary transition-colors">
+                        <h4 class="text-lg font-medium leading-6 group-hover:text-primary transition-colors">
                             Proposez-vous des produits éco-responsables ou économes en eau ?
-                        </h3>
+                        </h4>
                     </div>
                 </div>
 
@@ -526,9 +430,9 @@
 
                         </span>
 
-                        <h3 class="text-lg font-medium leading-6 group-hover:text-primary transition-colors">
+                        <h4 class="text-lg font-medium leading-6 group-hover:text-primary transition-colors">
                             Comment choisir le bon type de robinet/sèche-mains pour ma salle de bain ?
-                        </h3>
+                        </h4>
                     </div>
                 </div>
 
@@ -554,9 +458,9 @@
 
                         </span>
 
-                        <h3 class="text-lg font-medium leading-6 group-hover:text-primary transition-colors">
+                        <h4 class="text-lg font-medium leading-6 group-hover:text-primary transition-colors">
                             Quelle est la différence entre vos gammes de produits standard et haut de gamme ?
-                        </h3>
+                        </h4>
                     </div>
                 </div>
             </div>
