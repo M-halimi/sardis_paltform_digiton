@@ -41,7 +41,7 @@ export default {
                     '900': '#1e448a',
                     '950': '#1a305e',
                 },
-    
+
                 'tango': {
                     '50': '#fef7ee',
                     '100': '#fcedd8',

@@ -7,7 +7,7 @@
 
 <div
     x-data="{ isHovered: false }"
-    class="group w-72 bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105"
+    class="group w-72 bg-white border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105"
     x-on:mouseenter="isHovered = true"
     x-on:mouseleave="isHovered = false"
 >

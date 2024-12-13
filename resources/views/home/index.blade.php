@@ -25,6 +25,11 @@
             </div>
         </div>
     </header>
+
+    {{-- <a href="#" class="group text-sky-600 transition duration-300">
+        Link
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"></span>
+        </a> --}}
     {{--  end header  --}}
     <section class="max-w-7xl mx-auto py-4 md:py-8 mt-4">
         <div class="flex flex-col justify-center items-center space-y-2 md:space-y-4">

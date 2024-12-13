@@ -13,7 +13,7 @@
 
     <meta name="description" content="{{ $site_description ?? settings()->get('general.site_description') ?? '' }}">
     <link rel="canonical" href="{{ url()->current() }}" />
-    <script src="//unpkg.com/alpinejs" defer></script>
+    {{-- <script src="//unpkg.com/alpinejs" defer></script> --}}
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="{{ \Illuminate\Support\Facades\Storage::url(settings()->get('general.site_favicon')) ?? asset('assets/logos/favicon.ico') }}">

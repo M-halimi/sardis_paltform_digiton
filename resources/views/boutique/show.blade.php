@@ -3,12 +3,12 @@
     @slot('site_description', 'Robinetterie, accessoires et solutions innovantes pour sublimer votre espace.')
 
     <div class="bg-gray-100 py-20">
-        <div class="container mx-auto px-4 py-8">
+        <div class="container mx-auto px-4 py-4 md:py-8">
           <div class="flex flex-wrap -mx-4">
             <!-- Product Images -->
-            <div class="w-full md:w-1/2 px-7 mb-8 ">
+            <div class="w-full md:w-1/2 px-7">
               <img src="{{ asset('assets/image-page-boutique/SAR553K.png') }}" alt="Product"
-                          class="w-full h-auto rounded-lg shadow-md mb-4 object-cover aspect-square" id="mainImage">
+                          class="w-full h-[32rem] rounded-lg shadow-md mb-4 object-cover aspect-square" id="mainImage">
               <div class="flex gap-4 py-4 justify-center overflow-x-auto">
                 <img src="{{ asset('assets/image-page-boutique/SAR553K.png') }}" alt="SAR553K"
                               class="size-16 sm:size-20 h-auto object-cover aspect-square rounded-md cursor-pointer opacity-60 hover:opacity-100 transition duration-300"
@@ -105,35 +105,38 @@
 
         {{-- product Produits similaires --}}
         <section class="max-w-7xl mx-auto px-4">
-            <h3 class="text-2xl text-tango-700 tracking-wider px-4 underline underline-offset-4 decoration-tango-700">
-                    PRODUITS SIMILAIRES
-            </h3>
-        <div class="grid grid-rows-2 gap-4">
+            <div class="flex justify-center md:justify-start   items-start">
+                    <h3 class="text-2xl text-tango-700 tracking-wider px-4 underline underline-offset-4 decoration-tango-700">
+                                        PRODUITS SIMILAIRES
+                    </h3>
+            </div>
+
+        <div class="grid grid-rows-2 gap-4 place-items-center">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mt-8">
                 <x-card-produit
                     imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
-                    brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                    brand="DOUCHETTE & SUPPORTS"
                     productName="Classic Running Shoe"
                     :rating="4"
                 />
 
                 <x-card-produit
                 imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
-                brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                brand="DOUCHETTE & SUPPORTS"
                 productName="Classic Running Shoe"
                 :rating="4"
                     />
 
                     <x-card-produit
                     imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
-                    brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                    brand="DOUCHETTE & SUPPORTS"
                     productName="Classic Running Shoe"
                     :rating="4"
                 />
 
                 <x-card-produit
                 imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
-                brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                brand="DOUCHETTE & SUPPORTS"
                 productName="Classic Running Shoe"
                 :rating="4"
             />
@@ -142,27 +145,27 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mt-8">
                 <x-card-produit
                 imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
-                brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                brand="DOUCHETTE & SUPPORTS"
                 productName="Classic Running Shoe"
                 :rating="4"
                     />
 
                     <x-card-produit
                     imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
-                    brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                    brand="DOUCHETTE & SUPPORTS"
                     productName="Classic Running Shoe"
                     :rating="4"
                 />
 
                 <x-card-produit
                 imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
-                brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                brand="DOUCHETTE & SUPPORTS"
                 productName="Classic Running Shoe"
                 :rating="4"
             />
             <x-card-produit
                 imageUrl="{{ asset('assets/image-page-boutique/SAR553K.png') }}"
-                brand="KIT DOUCHETTE SEMI CARRE CLOSE BOX"
+                brand="DOUCHETTE & SUPPORTS"
                 productName="Classic Running Shoe"
                 :rating="4"
             />

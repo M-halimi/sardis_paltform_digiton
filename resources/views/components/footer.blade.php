@@ -1,8 +1,8 @@
     <footer class="max-w-7xl mx-auto py-4">
-        <div class="grid  grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-8 px-6">
-            
+        <div class="grid  grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-8 px-6 ">
+
             <!-- Logo Section -->
-            <div class="flex justify-center items-center col-span-1 sm:col-span-2 lg:col-span-1">
+            <div class="flex  justify-center items-center col-span-2 lg:col-auto">
                 <a href="/" aria-label="Homepage">
                     <x-application-logo class="md:w-[150px] w-[100px] mx-auto" />
                 </a>
@@ -10,45 +10,52 @@
 
 
             <!-- Why Sardis Section -->
-            <div class="">
-                <h2 class="text-2xl font-bold text-cobalt-950 mb-   4">Pourquoi Sardis ?</h2>
-                <p class="text-lg text-gray-800 leading-relaxed">
+            <div class="col-span-2 lg:col-auto">
+                <h2 class="text-2xl text-center lg:text-left font-bold text-cobalt-950 mb-4">Pourquoi Sardis ?</h2>
+                <p class="text-lg text-gray-600 leading-relaxed  lg:px-0">
                     En choisissant Sardis, vous bénéficierez d'un support de qualité et de notre expertise pour vous
                     accompagner tout au long de votre projet sanitaire.
-                </p>
-                <p class="text-lg text-gray-800 leading-relaxed mt-2">
+                {{-- </p>
+                <p class="text-lg text-gray-800 leading-relaxed mt-2"> --}}
                     Sardis, Le partenaire exclusif de Ramon Soler au Maroc !
                 </p>
             </div>
 
             <!-- Useful Links -->
             <!-- Useful Links Section -->
-            <div>
+            <div class="">
                 <h2 class="text-2xl font-bold text-cobalt-950 mb-4">Liens utiles</h2>
                 <ul class="space-y-2">
                     <li>
-                        <a href="#" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">
+                        <a href="#" class="text-lg group text-gray-600 transition duration-300 ease-out">
                             Contact
+                            <span class="block max-w-0 group-hover:max-w-16 transition-all duration-500 h-0.5 bg-tango-500"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">
+                        <a href="#" class="text-lg group text-gray-600 transition duration-300 ease-out">
                             À propos
+                            <span class="block max-w-0 group-hover:max-w-20 transition-all duration-500 h-0.5 bg-tango-500">
+
+                            </span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">
+                        <a href="#" class="text-lg group text-gray-600 transition duration-300 ease-out">
                             Politique de confidentialité
+                            <span class="block max-w-0 group-hover:max-w-52 transition-all duration-500 h-0.5 bg-tango-500">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">
+                        <a href="#" class="text-lg group text-gray-600 transition duration-300 ease-out">
                             Politique de Garantie
+                            <span class="block max-w-0 group-hover:max-w-44 transition-all duration-500 h-0.5 bg-tango-500">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">
+                        <a href="#" class="text-lg group text-gray-600 transition duration-300 ease-out">
                             SiteMap
+                            <span class="block max-w-0 group-hover:max-w-16 transition-all duration-500 h-0.5 bg-tango-500">
                         </a>
                     </li>
                 </ul>
@@ -59,23 +66,27 @@
                 <h2 class="text-2xl font-bold text-cobalt-950 mb-4">Produits</h2>
                 <ul class="space-y-2">
                     <li>
-                        <a href="#" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">
+                        <a href="#" class="text-lg group text-gray-600 transition duration-300 ease-out">
                             Robinetterie
+                            <span class="block max-w-0 group-hover:max-w-24 transition-all duration-500 h-0.5 bg-tango-500">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">
+                        <a href="#" class="text-lg group text-gray-600 transition duration-300 ease-out">
                             Salle de bain
+                            <span class="block max-w-0 group-hover:max-w-24 transition-all duration-500 h-0.5 bg-tango-500">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">
+                        <a href="#" class="text-lg group text-gray-600 transition duration-300 ease-out">
                             Clapet et regard
+                            <span class="block max-w-0 group-hover:max-w-32 transition-all duration-500 h-0.5 bg-tango-500">
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">
+                        <a href="#" class="text-lg group text-gray-600 transition duration-300 ease-out">
                             Siphon et caniveau
+                            <span class="block max-w-0 group-hover:max-w-36 transition-all duration-500 h-0.5 bg-tango-500">
                         </a>
                     </li>
                 </ul>
@@ -83,12 +94,30 @@
 
 
             <!-- Contact Info -->
-            <div>
-                <h2 class="text-2xl font-bold text-cobalt-950 mb-4">Contact Info</h2>
+            <div class="col-span-2 lg:col-auto">
+                <h2 class="text-2xl text-center lg:text-left  font-bold text-cobalt-950 mb-4">Contact Info</h2>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">125 - 127 Rue des Thermes La Villette, Casablanca - Morocco</a></li>
-                    <li><a href="mailto:sardis2009@gmail.com" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">sardis2009@gmail.com</a></li>
-                    <li><a href="tel:+0522626318" class="text-lg text-gray-800 hover:text-cobalt-900  hover:animate-bounce transition-colors duration-300">05 226 26318</a></li>
+                    <li>
+                        <a href="#" class="text-lg group text-gray-600 transition duration-300 ease-out">
+                        125 - 127 Rue des Thermes La Villette, Casablanca - Morocco
+                        <span class="block max-w-0 group-hover:max-w-20 transition-all duration-500 h-0.5 bg-tango-500">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:sardis2009@gmail.com" class="text-lg group text-gray-600 transition duration-300 ease-out">
+                            sardis2009@gmail.com
+                            <span class="block max-w-0 group-hover:max-w-48 transition-all duration-500 h-0.5 bg-tango-500">
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="tel:+0522626318"
+                            class="text-lg group text-gray-600 transition-all duration-200 ease-out">
+                            05 226 26318
+                            <span class="block max-w-0 group-hover:max-w-28 transition-all duration-200 ease-in-out h-0.5 bg-tango-500"></span>
+                        </a>
+
+                    </li>
                 </ul>
             </div>
         </div>

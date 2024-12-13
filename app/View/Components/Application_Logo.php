@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class read-more extends Component
+class Application_Logo extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class read-more extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.read-more');
+        return view('components.application-logo');
     }
 }
