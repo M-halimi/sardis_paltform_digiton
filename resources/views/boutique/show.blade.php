@@ -106,8 +106,8 @@
         {{-- product Produits similaires --}}
         <section class="max-w-7xl mx-auto px-4">
             <div class="flex justify-center md:justify-start   items-start">
-                    <h3 class="text-2xl text-tango-700 tracking-wider px-4 underline underline-offset-4 decoration-tango-700">
-                                        PRODUITS SIMILAIRES
+                    <h3 class="font-glacial text-2xl text-tango-700 tracking-wider px-4 underline underline-offset-4 decoration-tango-700">
+                        PRODUITS SIMILAIRES
                     </h3>
             </div>
 

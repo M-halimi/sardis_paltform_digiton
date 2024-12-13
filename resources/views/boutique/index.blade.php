@@ -22,8 +22,11 @@
     {{--  section Découvrez Nos Marques de Référence !  --}}
     <section class="max-w-7xl mx-auto py-4 md:py-4 mt-4">
         <div class="flex flex-col justify-center items-center space-y-2 md:space-y-4">
+            <p class="font-glacial text-lg bg-red-700">This is text with Glacial Indifference font.</p>
+
             <h2
-                class="font-bold lg:text-4xl max-w-5xl md:px-14 md:text-2xl px-4 text-center text-cobalt-950 text-lg tracking-wide">
+
+                class="font-bold  lg:text-4xl max-w-5xl md:px-14 md:text-2xl px-4 text-center text-cobalt-950 text-lg tracking-wide">
                 Découvrez Nos Marques de Référence !
             </h2>
             <p class="text-lg md:text-2xl tracking-tight text-tango-500 font-semibold">

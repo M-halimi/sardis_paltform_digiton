@@ -14,6 +14,9 @@ export default {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                glacial: ['GlacialIndifference', 'sans-serif'],
+            },
             colors: {
                     cobalt: {
                     50: "#f0f6fe",
